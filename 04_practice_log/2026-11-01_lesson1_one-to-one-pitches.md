@@ -62,6 +62,7 @@
 - **Journey gaps** (consent, cross-device, ads): the holdout measures the effect without needing attribution (→ Scenario 9).
 - **Data engineers can't sign off on the budget, but they can block the project.** Partner with them, don't instruct them.
 - **Read-only access:** Hightouch can read every number in the source tables but cannot change or delete them.
+- **Two permissions:** read-only on the client's raw tables; read + write on one separate dataset (e.g. `hightouch_workspace`) for the feature table and decision logs. The feature table is a *summary* (e.g. 2 order rows → `orders_365d = 2`), not a copy, and it stays inside the client's own BigQuery.
 
 ## What to practise next
 

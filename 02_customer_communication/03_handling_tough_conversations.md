@@ -94,6 +94,43 @@ General framework, **A-C-E-N**:
 
 ---
 
+## Scenario 8: "Can you guarantee results?"
+
+**CMO / VP Marketing:** "We've been burned by tools before. Can you guarantee this will work? An A/B test can just as easily show nothing."
+
+**❌ Weak:** "Yes, our customers typically see a 10–20% uplift, so you'll definitely see results."
+
+**✅ Strong:**
+> "No, and I'd be wary of anyone who promised that. What I *can* guarantee is that we'll know honestly whether it worked, and why. Can I ask what happened with the previous tool? Was it that results didn't come, or that nobody could prove them?
+>
+> *(listens)*
+>
+> Here's what I commit to. First, we pick a use case that gives the agent a real chance: enough volume and real variety in the content. Second, before launch we agree on the goal, the holdout size and the measurement window, so success is defined up front and not after the fact. Third, if the lift isn't there, we diagnose it: data, content, goal and guardrails. Usually one of those is the cause, and that becomes our next fix. Shall I put those three commitments into a one-page success plan you can share internally?"
+
+**Why it works:** honest instead of over-promising (this builds trust), finds the real fear behind the question, moves the conversation from "guarantee" to "a process we control", and ends with a concrete next step.
+
+**Concepts to have ready:**
+
+- **A holdout measures; it doesn't create success.** Its value is that nobody, including the vendor, can fool the customer.
+- **The downside is limited.** If one message really is best for everyone, the agent can learn to send it, which is roughly what an A/B test would give you. Where people respond differently, it can do better than any single variant.
+- **The real cost is the learning period.** Early exploration can cause a small dip before results improve. Say this *before* launch, not after.
+- **Most failures are setup failures, not AI failures:**
+
+| Risk | What the consultant does |
+|---|---|
+| Too little volume to learn from | Start with a high-volume use case (e.g. the weekly promo email) |
+| Content too similar | Make sure the library has real variety: different angles and offers, not 10 near-identical subject lines |
+| Wrong reward | Optimise for the business outcome (purchase in 7 days), not clicks |
+| Bad data | Check for duplicates, missing events and broken joins before go-live |
+| Guardrails too tight | If the agent has almost no choices, it can't beat BAU |
+| Impatience | Agree on the measurement window (e.g. 6–8 weeks) up front |
+
+- **"No lift" is still a result.** For example, "this audience doesn't respond to discounts at all" saves margin and shapes the next test.
+
+> 🔑 One-liner: *"I can't guarantee a lift, but I can guarantee we'll know honestly whether we got one, and why."*
+
+---
+
 ## Practice drill
 For each scenario, cover the strong answer and say your own version out loud in under 90 seconds. Record yourself. Check:
 - [ ] Did I acknowledge before explaining?

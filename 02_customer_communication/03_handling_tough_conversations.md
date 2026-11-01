@@ -131,6 +131,39 @@ General framework, **A-C-E-N**:
 
 ---
 
+## Scenario 9: "Our data can't track the full journey, so how can you measure anything?"
+
+**Data engineer:** "Customers click an email, leave, come back two days later from an Instagram ad, then buy on a different device. Half our visitors decline cookies. We can't see the full journey, so how can you say the AI caused anything?"
+
+**❌ Weak:** "Our attribution model handles that." *(Avoids the question, and attribution is exactly what they don't trust.)*
+
+**✅ Strong:**
+> "You're right, and I won't pretend we'll see every step. Consent, cross-device and the ad platforms all leave gaps. Can I check which gap worries you most: measuring the result, or the agent making decisions with incomplete information?
+>
+> *(listens)*
+>
+> For measurement, the good news is that we don't need the journey. The reward is 'purchased within 7 days of the decision, through any channel.' The holdout group sees the same ads, the same season and the same everything else. Only the emails differ. So if the AI group buys more, that difference is the effect, whatever path people took. It's actually more reliable than last-click attribution, which would give all the credit to the Instagram ad.
+>
+> For decisions, better journey data does help the agent choose. So I'd launch with what we have (customers, orders, Braze engagement) and add UTMs, session data and identity matching as phase two. Could we spend 30 minutes next week mapping which of those you already capture?"
+
+**Why it works:** agrees with the real limitation instead of overselling, separates *measuring the effect* (holdout, no journey needed) from *making better decisions* (journey data helps), and turns a blocker into a phased plan.
+
+**Concepts to have ready:**
+
+| Needed to see the journey | What it does |
+|---|---|
+| UTM parameters | Tag each link with its source (`utm_source=braze`) |
+| Ad click IDs | `fbclid`, `gclid` identify the ad click |
+| Session data | Groups page views into visits (landing page, referrer) |
+| Identity resolution | Links an anonymous cookie to a known customer at login or email click |
+| Ad platform data | Spend and impressions from Meta / Google |
+
+Gaps that remain even with all of the above: **cookie consent (GDPR)**, **cross-device behaviour**, and **walled gardens** (ad platforms share totals, not individual-level data).
+
+> 🔑 One-liner: *"We don't need perfect attribution to prove value. The holdout cancels out every other channel. Better journey data makes the agent smarter, but it doesn't block launch."*
+
+---
+
 ## Practice drill
 For each scenario, cover the strong answer and say your own version out loud in under 90 seconds. Record yourself. Check:
 - [ ] Did I acknowledge before explaining?
